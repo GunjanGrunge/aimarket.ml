@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1> LETS GO! </h1>
+        <div class="form">
+
+                <li><label> Enter Total Number of  Matches Played </label>
+                    <input  type="number" id="tNfMPlayed" oninput="played()"></li>
+                    <p id="PtNfMPlayed"> </p>
+            
+                    <li><label> Enter Total Number of Finishes </label>
+                        <input  type="number" id="tNfFinishes" oninput="finishes()"></li>
+                        <p id="PtNfFinishes">  </p>
+            
+                    <li><label> Enter "Total" Number of Matches To be Played </label>
+                        <input  type="number" id="tM2BPlayed" oninput="moreplay()"></li>
+                        <p id="PtM2BPlayed"> </p>
+                        
+            
+                   <li> <label> Enter The KD YOU WANT TO achieve </label>
+                    <input  type="number" id="kDYWAchieve" oninput="kdcheck()"> </li>
+                    <p id="PkDYWAchieve"> </p>
+            </div>
+        </div>
+        <div>
+            <button id="calc" onclick="pkd()"> Calculate</button>
+        <button onclick="reset()"> Reset</button>
+        </div>
+
+        <p id="result"> </p>
+</body>
+<script src="index.js"> </script>
+</html>
