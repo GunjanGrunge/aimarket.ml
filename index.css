@@ -10,6 +10,9 @@ font-family: 'Ubuntu', sans-serif; */
 body{
     background: linear-gradient(to right, #485563, #29323c);
     max-height: 50%;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
 }
 
 h1{
@@ -24,6 +27,7 @@ h1{
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .item {
@@ -87,4 +91,15 @@ h1{
 .copyright a{
     text-decoration: none;
     color: white;
+    margin: auto;
+}
+
+body::before{
+    background: url(/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg) no-repeat center/cover;
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
 }
